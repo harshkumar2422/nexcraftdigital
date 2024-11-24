@@ -6,9 +6,9 @@ function Brands() {
       <section className="services pt-40">
         <div className="container">
           <div className="sec-head mb-40">
-            <h6 className="sub-title main-color mb-25">
+            {/* <h6 className="sub-title main-color mb-25">
               Driving Results with Proven Partners
-            </h6>
+            </h6> */}
             <div className="bord pt-25 bord-thin-top">
               <h2 className="fw-600 d-rotate wow">
                 <span className="rotate-text">

@@ -22,8 +22,8 @@ function Footer() {
                 </h5>
               </div>
 
-              <a href="#0" className="underline">
-                <span className="fz-22 contact-number">+2 456 (343) 24 45</span>
+              <a href="tel:+919266518440" className="underline">
+                <span className="fz-22 contact-number">+91 92665 18440</span>
               </a>
             </div>
           </div>

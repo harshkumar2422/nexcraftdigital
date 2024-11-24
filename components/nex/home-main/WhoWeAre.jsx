@@ -30,9 +30,11 @@ function WhoWeAre() {
                     </div>
                     <div className="text">
                       <p>
-                        We are a creative studio specializing in design,
-                        development and strategy many different skills and
-                        disciplines in the production of all web.
+                        Founded with a vision to empower businesses, we
+                        specialize in providing innovative web and app
+                        development solutions. Our team's expertise and
+                        commitment to excellence drive measurable success,
+                        ensuring our clients' growth in the digital landscape.
                       </p>
                     </div>
                     <Link href="/about-us" className="mt-30">
@@ -56,9 +58,7 @@ function WhoWeAre() {
                     </div>
                     <div className="text">
                       <p>
-                        We are a creative studio specializing in design,
-                        development and strategy many different skills and
-                        disciplines in the production of all web.
+                      Our mission is to transform ideas into impactful digital experiences, empowering businesses with cutting-edge technology and tailored solutions that drive growth, innovation, and long-term success in an ever-evolving digital landscape.
                       </p>
                     </div>
                     <Link href="/about-us" className="mt-30">
@@ -82,9 +82,7 @@ function WhoWeAre() {
                     </div>
                     <div className="text">
                       <p>
-                        We are a creative studio specializing in design,
-                        development and strategy many different skills and
-                        disciplines in the production of all web.
+                      Our vision is to redefine the future of digital experiences by empowering businesses with innovative solutions that inspire growth and transformation. We strive to lead the way in shaping a connected, impactful digital world.
                       </p>
                     </div>
                     <Link href="/about-us" className="mt-30">
@@ -108,9 +106,7 @@ function WhoWeAre() {
                     </div>
                     <div className="text">
                       <p>
-                        We are a creative studio specializing in design,
-                        development and strategy many different skills and
-                        disciplines in the production of all web.
+                      Our achievements showcase our dedication to pushing boundaries and delivering exceptional results. Through innovative solutions and strategic partnerships, we've empowered businesses to reach new heights, consistently exceeding expectations and making a lasting impact in the digital landscape.
                       </p>
                     </div>
                     <Link href="/about-us" className="mt-30">
@@ -132,9 +128,9 @@ function WhoWeAre() {
                 <div className="col-lg-11">
                   <div className="text mb-50">
                     <p>
-                      We shifted our talents to frontier science because we
-                      wanted our work to have tangible. we get front row seats
-                      to the future.
+                      Driving Digital Transformation with Innovation,
+                      Excellence, and Results – Empowering Your Business for
+                      Success
                     </p>
                   </div>
                   <ul className="rest">

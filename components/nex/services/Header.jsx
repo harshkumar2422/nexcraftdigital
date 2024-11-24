@@ -10,11 +10,15 @@ function Header() {
         <div className="row justify-content-start">
           <div className="col-lg-10">
             <div className="text mb-100">
-              <h4>Innovate, Grow, Succeed</h4>
+              <h4>
+                Empowering your business through tailored digital innovation.{" "}
+              </h4>
               <div>
                 <span>
-                  {" "}
-                  Explore our comprehensive range of services meticulously designed to drive business growth, enhance online visibility, and develop innovative solutions tailored to meet your unique needs. Discover how we can transform your ideas into reality and empower your business to thrive in today&apos;s competitive landscape.
+                  Imagine a journey where your ideas evolve into powerful
+                  digital solutions, creating growth and success for your
+                  business at every step. We’re here to make that vision a
+                  reality.
                 </span>
               </div>
 

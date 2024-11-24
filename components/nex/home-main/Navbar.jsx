@@ -70,7 +70,7 @@ function Navbar() {
           <a
             className="support"
             target="_blank"
-            href="https://api.whatsapp.com/send/?phone=919354241447&text=Information"
+            href="https://api.whatsapp.com/send/?phone=919266518440&text=Information"
           >
             SUPPORT
           </a>

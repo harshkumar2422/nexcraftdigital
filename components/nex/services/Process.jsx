@@ -22,8 +22,10 @@ function Process() {
             </div>
             <h5 className="mb-15">Discovery</h5>
             <p>
-              We assess your unique needs and goals to craft a personalized
-              strategy for success.
+              The first step in our seamless process is discovery. We work
+              closely with you to understand your goals, target audience, and
+              business needs, ensuring a solid foundation for successful
+              solutions.
             </p>
             <div className="o-hidden">
               <Link href="/about-us" className="rmore to-in mt-30">
@@ -42,8 +44,10 @@ function Process() {
             </div>
             <h5 className="mb-15">Planning</h5>
             <p>
-              We develop a comprehensive plan that outlines the project scope,
-              timeline, and critical milestones for clarity and focus.
+              Planning is the foundation of success. In this phase, we define
+              clear goals, outline the project scope, and strategize the best
+              approach to ensure alignment with your vision and efficient
+              resource utilization.
             </p>
             <div className="o-hidden">
               <Link href="/about-us" className="rmore to-in mt-30">
@@ -62,8 +66,10 @@ function Process() {
             </div>
             <h5 className="mb-15">Development</h5>
             <p>
-              Our team builds effective solutions using cutting-edge
-              technologies and industry standards.
+              Development is where ideas transform into reality. Our team builds
+              the project based on defined specifications, prioritizing clean
+              code, functionality, scalability, and high-quality standards to
+              ensure seamless performance throughout.
             </p>
             <div className="o-hidden">
               <Link href="/about-us" className="rmore to-in mt-30">
@@ -82,8 +88,10 @@ function Process() {
             </div>
             <h5 className="mb-15">Launch & Support</h5>
             <p>
-              We launch your project and provide ongoing support for continued
-              growth and client success.
+              Launch and Support encompass the final deployment of the project,
+              ensuring seamless functionality in a live environment. After
+              launch, we offer ongoing support, resolving issues and optimizing
+              performance for sustained success.
             </p>
             <div className="o-hidden">
               <Link href="/about-us" className="rmore to-in mt-30">

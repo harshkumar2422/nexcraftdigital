@@ -21,8 +21,7 @@ function Intro() {
                     <h4>Our Mission</h4>
                     <div className="text mt-30">
                       <p>
-                        Our journey is defined by a rich tapestry of
-                        achievements and values that set us apart.
+                      Our mission is to transform ideas into impactful digital experiences, empowering businesses with cutting-edge technology and tailored solutions that drive growth, innovation, and long-term success in an ever-evolving digital landscape.
                       </p>
                     </div>
                   </div>
@@ -40,8 +39,7 @@ function Intro() {
                     <h4>Why Us?</h4>
                     <div className="text mt-30">
                       <p>
-                        Our journey is defined by a rich tapestry of
-                        achievements and values that set us apart.
+                      Because we don’t just build solutions; we craft digital experiences that resonate. With a passion for innovation and a focus on your goals, we transform challenges into opportunities, driving lasting success and growth for your business
                       </p>
                     </div>
 
@@ -62,9 +60,7 @@ function Intro() {
                     </div>
                     <h4>Our Vision</h4>
                     <div className="text mt-30">
-                      <p>
-                        Our journey is defined by a rich tapestry of
-                        achievements and values that set us apart.
+                      <p>  Our vision is to redefine the future of digital experiences by empowering businesses with innovative solutions that inspire growth and transformation. We strive to lead the way in shaping a connected, impactful digital world.
                       </p>
                     </div>
                   </div>

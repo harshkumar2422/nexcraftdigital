@@ -15,12 +15,17 @@ function Header() {
 
               <div>
                 <span>
-                  Welcome to NexCraft Digital, where creativity meets
-                  innovation. As a premier Website Development Company, we
-                  specialize in delivering cutting-edge Web Development Services
-                  designed to help businesses thrive in the ever-evolving
-                  digital world. Whether you’re a startup or an established
-                  enterprise, our solutions ensure your brand stands out online.
+                  Welcome to NexaCraftDigital, where creativity and technology
+                  come together to shape your digital future. We specialize in
+                  creating transformative websites and apps that empower
+                  businesses to thrive in a fast-paced online world. Whether
+                  you're a startup with bold ideas or an established brand
+                  aiming to elevate your digital presence, we bring your vision
+                  to life with innovative solutions. From stunning, responsive
+                  websites to intuitive mobile apps that captivate users, our
+                  team is dedicated to delivering experiences that leave a
+                  lasting impact. At NexaCraftDigital, we don’t just build
+                  digital products—we craft success stories.
                 </span>
               </div>
 

@@ -8,9 +8,12 @@ function ServiceOverview() {
       <div className="container">
         <div className="sec-head mb-80">
           <div className="bord pt-25 bord-thin-top d-flex align-items-center">
-            <h2 className="fw-600 text-u ls1">
+            <h2 className="fw-600  ls1">
               Your Growth
-              <span className="fw-200">Catalysts!</span>
+              <span className="fw-200 " style={{ marginLeft: "10px" }}>
+                {" "}
+                Catalysts
+              </span>
             </h2>
           </div>
         </div>

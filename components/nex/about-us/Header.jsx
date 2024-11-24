@@ -10,16 +10,14 @@ function Header() {
         <div className="row justify-content-start">
           <div className="col-lg-10">
             <div className="text mb-100">
-              <h4>Building Digital Solutions for the Future</h4>
+              <h4>
+                Turning Your Vision into Impactful Digital Solutions for
+                Business Growth
+              </h4>
 
               <div>
                 <span>
-                  At NexCraft Digital , we specialize in crafting innovative, custom
-                  digital solutions that drive growth and elevate brands. <br /> Since
-                  our founding in 2024, we’ve been committed to helping
-                  businesses succeed in the ever-evolving digital landscape,
-                  offering services ranging from website development to digital
-                  marketing and CRM solutions.
+                From the inception of a visionary idea to the creation of impactful digital solutions, we are committed to helping businesses thrive in a fast-paced digital world. With innovative strategies, cutting-edge technology, and a focus on long-term success, we guide businesses toward achieving sustained growth, market leadership, and digital transformation.
                 </span>
               </div>
 

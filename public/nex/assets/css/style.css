@@ -506,16 +506,22 @@ figure {
 }
 
 .butn.butn-bord {
-  border-color: #1a1a1a;
+  border-color: var(--secendory-color);
   background: transparent;
-  color: #1a1a1a;
+  color: var(--secendory-color);
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
+  font-size: 18px;
+}
+.contact .butn.butn-full {
+  width: 160px;
+  margin: auto;
+  padding: 10px;
 }
 
 .butn.butn-bord:hover {
-  background: #1a1a1a;
+  background: var(--secendory-color);
   color: #fff;
 }
 
@@ -5845,7 +5851,7 @@ footer.clean-footer.crev:after {
   object-fit: cover;
   object-position: top; */
 }
-.our-story .sub-title{
+.our-story .sub-title {
   color: var(--secendory-color);
 }
 
@@ -8058,8 +8064,6 @@ a.service-cta {
 .services-details .serv-imgs .img {
   height: 400px;
 }
-
-
 
 /* Sliders
 -----------------------------------------------------------------*/

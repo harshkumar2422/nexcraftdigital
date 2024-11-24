@@ -1,17 +1,40 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 
-function FAQS() {
+function FAQS({ data }) {
+  useEffect(() => {
+    // Ensure only the first item is open on initial render
+    const accordionItems = document.querySelectorAll(".accordion-info");
+    accordionItems.forEach((element, index) => {
+      if (index === 0) {
+        element.style.maxHeight = "300px";
+        element.classList.add("active");
+        element.parentElement.classList.add("active");
+      } else {
+        element.style.maxHeight = "0";
+        element.classList.remove("active");
+        element.parentElement.classList.remove("active");
+      }
+    });
+  }, []);
+
   function openAccordion(event) {
+    const target = event.currentTarget;
+    const isActive = target.nextElementSibling.classList.contains("active");
+
     document.querySelectorAll(".accordion-info").forEach((element) => {
+      element.style.maxHeight = "0";
       element.classList.remove("active");
-      element.style.maxHeight = 0;
       element.parentElement.classList.remove("active");
     });
-    event.currentTarget.parentElement.classList.add("active");
-    event.currentTarget.nextElementSibling.style.maxHeight = "300px";
-    event.currentTarget.nextElementSibling.classList.add("active");
+
+    if (!isActive) {
+      target.parentElement.classList.add("active");
+      target.nextElementSibling.style.maxHeight = "300px";
+      target.nextElementSibling.classList.add("active");
+    }
   }
+
   return (
     <section className="faqs section-padding pt-0">
       <div className="container">
@@ -23,52 +46,21 @@ function FAQS() {
               </div>
               <div className="list-serv">
                 <div className="accordion bord">
-                  <div
-                    className="item active mb-15 wow fadeInUp"
-                    data-wow-delay=".1s"
-                  >
-                    <div onClick={openAccordion} className="title">
-                      <h6>What technologies do you use for web development?</h6>
-                      <span className="ico ti-plus"></span>
+                  {data?.map((item, index) => (
+                    <div
+                      className={`item ${index === 0 ? "active" : ""} mb-15 wow fadeInUp`}
+                      data-wow-delay=".1s"
+                      key={`faq${index}`}
+                    >
+                      <div onClick={openAccordion} className="title">
+                        <h6>{item?.question}</h6>
+                        <span className="ico ti-plus"></span>
+                      </div>
+                      <div className="accordion-info">
+                        <p>{item?.answer}</p>
+                      </div>
                     </div>
-                    <div className="accordion-info">
-                      <p className="">
-                        We utilize a variety of technologies, including HTML,
-                        CSS, JavaScript, PHP, and popular frameworks like React
-                        and WordPress, tailored to your project needs.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="item mb-15 wow fadeInUp" data-wow-delay=".3s">
-                    <div onClick={openAccordion} className="title">
-                      <h6>How long does it take to develop a website?</h6>
-                      <span className="ico ti-plus"></span>
-                    </div>
-                    <div className="accordion-info">
-                      <p className="">
-                        The timeline varies based on project complexity.
-                        Typically, it takes 4-12 weeks from consultation to
-                        launch.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="item wow fadeInUp" data-wow-delay=".5s">
-                    <div onClick={openAccordion} className="title">
-                      <h6>
-                        Do you provide ongoing support after the website is
-                        launched?
-                      </h6>
-                      <span className="ico ti-plus"></span>
-                    </div>
-                    <div className="accordion-info">
-                      <p className="">
-                        Yes, we offer various maintenance and support packages
-                        to ensure your website runs smoothly.
-                      </p>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>
