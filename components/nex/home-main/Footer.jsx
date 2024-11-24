@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 
+
 function Footer() {
   return (
     <footer className="clean-footer crev bg-img" data-overlay-dark="10">
