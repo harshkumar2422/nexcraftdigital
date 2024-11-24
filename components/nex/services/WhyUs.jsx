@@ -29,8 +29,8 @@ function WhyUs() {
                 <div className="col-lg-11">
                   <div className="text mb-50">
                     <p>
-                      When you choose us, you're not just selecting a service —
-                      you're beginning a journey with a dedicated team that
+                      When you choose us, you&apos;re not just selecting a service —
+                      you&apos;re beginning a journey with a dedicated team that
                       genuinely cares about your success. Imagine having a
                       partner who understands your unique vision, your goals,
                       and your challenges. From the very first conversation, we
@@ -49,7 +49,7 @@ function WhyUs() {
                     <p>
                       Our commitment to customer satisfaction means we’re with
                       you every step of the way — from planning to launch and
-                      beyond. We don't just deliver a product; we deliver a
+                      beyond. We don&apos;t just deliver a product; we deliver a
                       lasting partnership that drives growth and success for
                       your business.
                     </p>

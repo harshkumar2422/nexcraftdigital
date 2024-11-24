@@ -19,12 +19,12 @@ function Header() {
                   come together to shape your digital future. We specialize in
                   creating transformative websites and apps that empower
                   businesses to thrive in a fast-paced online world. Whether
-                  you're a startup with bold ideas or an established brand
+                  you&apos;re a startup with bold ideas or an established brand
                   aiming to elevate your digital presence, we bring your vision
                   to life with innovative solutions. From stunning, responsive
                   websites to intuitive mobile apps that captivate users, our
                   team is dedicated to delivering experiences that leave a
-                  lasting impact. At NexaCraftDigital, we don’t just build
+                  lasting impact. At NexaCraftDigital, we don&apos;t just build
                   digital products—we craft success stories.
                 </span>
               </div>

@@ -32,9 +32,9 @@ function WhoWeAre() {
                       <p>
                         Founded with a vision to empower businesses, we
                         specialize in providing innovative web and app
-                        development solutions. Our team's expertise and
+                        development solutions. Our team&apos;s expertise and
                         commitment to excellence drive measurable success,
-                        ensuring our clients' growth in the digital landscape.
+                        ensuring our clients growth in the digital landscape.
                       </p>
                     </div>
                     <Link href="/about-us" className="mt-30">
@@ -106,7 +106,7 @@ function WhoWeAre() {
                     </div>
                     <div className="text">
                       <p>
-                      Our achievements showcase our dedication to pushing boundaries and delivering exceptional results. Through innovative solutions and strategic partnerships, we've empowered businesses to reach new heights, consistently exceeding expectations and making a lasting impact in the digital landscape.
+                      Our achievements showcase our dedication to pushing boundaries and delivering exceptional results. Through innovative solutions and strategic partnerships, we&apos;ve empowered businesses to reach new heights, consistently exceeding expectations and making a lasting impact in the digital landscape.
                       </p>
                     </div>
                     <Link href="/about-us" className="mt-30">
