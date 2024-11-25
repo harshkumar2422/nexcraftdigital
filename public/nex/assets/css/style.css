@@ -9980,6 +9980,29 @@ a.service-cta {
 }
 
 @media screen and (max-width: 768px) {
+  /* custom responsive start */
+  .img-scale .image img {
+    height: unset;
+  }
+  .img-scale{
+    height: 400px;
+  }
+
+  .fz-100 {
+    font-size: 50px !important;
+  }
+
+  .page-intro-cerv .cont{
+    padding: 10px 60px 30px 60px;
+  }
+
+  .fz-40{
+    font-size: 30px !important;
+  }
+
+
+/* custom responsive end */
+
   .sm-mb10 {
     margin-bottom: 10px;
   }
@@ -10026,7 +10049,7 @@ a.service-cta {
     display: none;
   }
   .fz-70 {
-    font-size: 40px !important;
+    font-size: 32px !important;
   }
   h1 {
     font-size: 50px;
@@ -10074,8 +10097,8 @@ a.service-cta {
     font-size: 20px;
   }
   .section-padding {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    /* padding-top: 100px; */
+    /* padding-bottom: 100px; */
   }
   .sec-head .bord {
     display: block !important;

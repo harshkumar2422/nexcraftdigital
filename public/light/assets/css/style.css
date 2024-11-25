@@ -9913,6 +9913,8 @@ footer.clean-footer.crev:before {
 }
 
 @media screen and (max-width: 768px) {
+
+
   .sm-mb10 {
     margin-bottom: 10px;
   }
@@ -10446,4 +10448,4 @@ footer.clean-footer.crev:before {
   }
 }
 
-/* ====================== [ End Responsive ] ====================== */
+/* ====================== [ End Responsive ] ======================*/
