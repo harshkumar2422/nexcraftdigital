@@ -10834,4 +10834,8 @@ Keyframes Area Style
   .navbar .main-content {
     padding: 0;
   }
+  .section-padding{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
