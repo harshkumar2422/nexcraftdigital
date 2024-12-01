@@ -1,8 +1,13 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
+import { HiBars3 } from "react-icons/hi2";
 
 function Navbar() {
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const sidebarRef = useRef(null);
+  const overlayRef = useRef(null);
+
   function handleScroll() {
     const bodyScroll = window.scrollY;
     const navbar = document.querySelector(".navbar");
@@ -16,10 +21,29 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        sidebarRef.current &&
+        !sidebarRef.current.contains(event.target) &&
+        overlayRef.current &&
+        !overlayRef.current.contains(event.target)
+      ) {
+        setSidebarOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <>
       <nav className="main navbar navbar-expand-lg bord blur">
-        <div className="container">
+        <div className="container main-content">
           <Link className="logo icon-img-200" href="/">
             <img src="/nex/assets/imgs/logo-light.png" alt="logo" />
           </Link>
@@ -74,8 +98,64 @@ function Navbar() {
           >
             SUPPORT
           </a>
+
+          <div
+            className="hamburger-icon"
+            onClick={() => setSidebarOpen(!isSidebarOpen)}
+          >
+            <HiBars3 size={"20px"} style={{ color: "white" }} />
+          </div>
         </div>
       </nav>
+
+      <div
+        ref={sidebarRef}
+        className={`sidebar ${isSidebarOpen ? "open" : ""}`}
+      >
+        <div className="sidebar-content">
+          <button
+            className="close-sidebar"
+            onClick={() => setSidebarOpen(false)}
+          >
+            &times;
+          </button>
+
+          <ul className="sidebar-nav">
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/about-us/">About</Link>
+            </li>
+            <li>
+              <Link href="/services">Service</Link>
+            </li>
+            <li>
+              <Link href="/portfolio/">Portfolio</Link>
+            </li>
+            <li>
+              <Link href="/blogs/">Blogs</Link>
+            </li>
+            <li>
+              <Link href="/contact-us/">Contact Us</Link>
+            </li>
+
+            <a
+              className="support-sidebar-nav"
+              target="_blank"
+              href="https://api.whatsapp.com/send/?phone=919354241447&text=Information"
+            >
+              SUPPORT
+            </a>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        ref={overlayRef}
+        className={`overlay ${isSidebarOpen ? "open" : ""}`}
+        onClick={() => setSidebarOpen(false)}
+      ></div>
     </>
   );
 }

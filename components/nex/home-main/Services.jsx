@@ -1,10 +1,42 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import data from "@/l-data/services.json";
 import { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 function Services() {
+  const [slidesPerView, setSlidesPerView] = useState(1);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  
+  useEffect(() => {
+    // Function to calculate slidesPerView based on window size
+    const updateSlidesPerView = () => {
+      if (window.innerWidth >= 1000) {
+        setSlidesPerView(3);
+      } else if (window.innerWidth >= 768) {
+        setSlidesPerView(2);
+      } else {
+        setSlidesPerView(1);
+      }
+    };
+
+    // Set initial value
+    updateSlidesPerView();
+
+    // Add resize event listener
+    window.addEventListener("resize", updateSlidesPerView);
+
+    // Cleanup event listener on component unmount
+    return () => window.removeEventListener("resize", updateSlidesPerView);
+  }, []);
+
+
+
   const swiperOptions = {
     modules: [Navigation, Autoplay],
     speed: 600,
@@ -13,37 +45,20 @@ function Services() {
       disableOnInteraction: true,
     },
     loop: true,
-    slidesPerView: 3,
+    slidesPerView: slidesPerView, // Dynamically set slidesPerView
     spaceBetween: 50,
-    centeredSlides: true,
+    centeredSlides: true, // Center slides only for 1 slide
     navigation: {
       nextEl: ".swiper-arrow-control .swiper-button-next",
       prevEl: ".swiper-arrow-control .swiper-button-prev",
     },
-    breakpoints: {
-      // when window width is >= 640px
-      640: {
-        loop: true,
-        slidesPerView: 1,
-        spaceBetween: 20,
-        centeredSlides: false,
-      },
-      // when window width is >= 768px
-      768: {
-        loop: true,
-        slidesPerView: 2,
-        spaceBetween: 50,
-        centeredSlides: false,
-      },
-      // when window width is >= 1200px
-      1000: {
-        loop: true,
-        slidesPerView: 3,
-        spaceBetween: 50,
-        centeredSlides: true,
-      },
-    },
   };
+
+
+  if (!isMounted) {
+    return null; // Avoid rendering until client-side
+  }
+
   return (
     <section className="services section-padding">
       <div className="container">

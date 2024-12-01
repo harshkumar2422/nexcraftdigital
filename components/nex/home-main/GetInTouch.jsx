@@ -16,7 +16,7 @@ function GetInTouch() {
           />
         </div>
         <div className="text-u text-center ontop">
-          <h4 className="fz-70 fw-600" >
+          <h4 className="fz-70 fw-600">
             Take Your <span className="fw-300">Business Higher</span>
           </h4>
           <Link

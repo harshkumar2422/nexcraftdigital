@@ -10806,3 +10806,32 @@ Keyframes Area Style
   -webkit-animation: animationFramesOne 25s infinite linear;
   animation: animationFramesOne 25s infinite linear;
 }
+
+/* media query */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+  .navbar {
+    padding: 10px;
+  }
+  .navbar .logo {
+    width: 160px;
+  }
+  .above-hero-section {
+    padding: 10px;
+  }
+  .above-hero-section .headline {
+    font-size: 23px;
+  }
+  .above-hero-section .main-content {
+    padding: 0 !important;
+  }
+  .navbar .main-content {
+    padding: 0;
+  }
+}
