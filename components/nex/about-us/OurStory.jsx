@@ -6,17 +6,7 @@ function OurStory() {
     <section className="services-tab section-padding  our-story">
       <div className="container">
         <div className="row lg-marg" id="tabs">
-          {/* <div className="col-lg-4 valign">
-            <div className="serv-tab-cont md-mb80">
-              <div className="tab-content current" id="tabs-1">
-                <div className="item">
-                  <div className="img">
-                    <img src="/nex/assets/imgs/background/our-vision.jpeg" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
+    
           <div className="col-lg-10 valign" style={{ alignItems: "flex-start" }}>
             <div className="serv-tab-link tab-links full-width">
               <div className="sec-head mb-30">
@@ -27,9 +17,9 @@ function OurStory() {
                 <div className="col-lg-11">
                   <div className="text mb-50">
                     <p>
-                      [Company Name] started with a clear vision: to harness the
+                      NexCraft Digital started with a clear vision: to harness the
                       power of technology to transform businesses. Our journey
-                      began in [Year], when a small team of passionate
+                      began in 2024, when a small team of passionate
                       developers and marketers came together to help businesses
                       build a strong digital presence.
                     </p>

@@ -1,0 +1,36 @@
+[
+  {
+    "question": "What is the name of your company?",
+    "answer": "Our company is called NexCraft Digital."
+  },
+
+  {
+    "question": "What do you do?",
+    "answer": "We specialize in website development , app development , software development , crm solutions , seo & digital marketing "
+  },
+  {
+    "question": "How does the consultation process work?",
+    "answer": "Our process starts with a detailed discussion to understand your goals and requirements. From there, we create a custom strategy aligned with your needs."
+  },
+  {
+    "question": "What is the typical project timeline?",
+    "answer": "Project timelines vary based on scope and complexity. After our initial consultation, we’ll provide an estimated timeline for your specific project."
+  },
+
+  {
+    "question": "Do you offer ongoing support after project completion?",
+    "answer": "Yes, we offer various maintenance and support packages  to keep your website or application running smoothly"
+  },
+  {
+    "question": "What are your support hours?",
+    "answer": "Our support team is available 24/7, every day of the year, to assist you whenever you need help."
+  },
+  {
+    "question": "Is my data secure?",
+    "answer": "Absolutely. We use industry-standard encryption and security measures to ensure your data is safe with us."
+  },
+  {
+    "question": "Do you sell my personal information?",
+    "answer": "No, we do not sell or share your personal information with third parties. Please review our Privacy Policy for more details."
+  }
+]

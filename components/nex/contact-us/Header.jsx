@@ -1,12 +1,12 @@
 function Header() {
   return (
     <div
-      className="header page-header bg-img section-padding portfolio-hero-section"
+      className="header page-header bg-img section-padding portfolio-hero-section above-hero-section"
       data-overlay-dark="8"
     >
       <div className="container">
         <div className="text-center">
-          <h4>Let&apos;s Build Your Vision Together </h4>
+          <h4 className='headline'>Let&apos;s Build Your Vision Together </h4>
           <div className="mt-15">
             <span>
               Connect with us to receive expert guidance tailored to your needs.{" "}

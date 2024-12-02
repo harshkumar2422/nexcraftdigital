@@ -1,0 +1,17 @@
+[
+  {
+    "image": "/nex/assets/imgs/blog/ai/1.jpg",
+    "tagline": "The Impact of Artificial Intelligence on Modern Technology",
+    "link": "/blog-details/artifical-inteliigence"
+  },
+  {
+    "image": "/nex/assets/imgs/blog/cyber/1.jpg",
+    "tagline": "Cybersecurity: Protecting the Digital Frontier",
+    "link": "/blog-details/cyber-security"
+  },
+  {
+    "image": "/nex/assets/imgs/blog/blockchain/4.jpg",
+    "tagline": "Blockchain: The Technology Revolutionizing the Digital World",
+    "link": "/blog-details/block-chain"
+  }
+]

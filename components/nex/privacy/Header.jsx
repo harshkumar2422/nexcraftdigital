@@ -1,7 +1,7 @@
 function Header() {
   return (
     <div
-      className="header page-header bg-img section-padding portfolio-hero-section"
+      className="header page-header bg-img section-padding portfolio-hero-section above-hero-section"
       data-overlay-dark="9"
     >
       <div className="container">

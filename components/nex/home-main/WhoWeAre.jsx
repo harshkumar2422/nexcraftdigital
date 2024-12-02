@@ -11,7 +11,7 @@ function WhoWeAre() {
     document.querySelector(`.tab-content#${tabid}`).style.display = "block";
   };
   return (
-    <section className="services-tab section-padding mb-80">
+    <section className="services-tab section-padding mb-80 who-we-are">
       <div className="container">
         <div className="row lg-marg" id="tabs">
           <div className="col-lg-6 valign">
@@ -139,7 +139,7 @@ function WhoWeAre() {
                       className="item-link current mb-15"
                       data-tab="tabs-1"
                     >
-                      <h3>
+                      <h3 className="sub-heading">
                         <span className="fz-18 opacity-7 mr-15">01</span> About
                         Us
                       </h3>
@@ -149,7 +149,7 @@ function WhoWeAre() {
                       className="item-link mb-15"
                       data-tab="tabs-2"
                     >
-                      <h3>
+                      <h3 className="sub-heading">
                         <span className="fz-18 opacity-7 mr-15">02</span> Our
                         Mission
                       </h3>
@@ -159,7 +159,7 @@ function WhoWeAre() {
                       className="item-link mb-15"
                       data-tab="tabs-3"
                     >
-                      <h3>
+                      <h3 className="sub-heading">
                         <span className="fz-18 opacity-7 mr-15">03</span> Our
                         Vision
                       </h3>
@@ -169,7 +169,7 @@ function WhoWeAre() {
                       className="item-link"
                       data-tab="tabs-4"
                     >
-                      <h3>
+                      <h3 className="sub-heading">
                         <span className="fz-18 opacity-7 mr-15">04</span>{" "}
                         Achievements
                       </h3>

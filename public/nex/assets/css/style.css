@@ -10807,6 +10807,32 @@ Keyframes Area Style
   animation: animationFramesOne 25s infinite linear;
 }
 
+.thank-you {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.thank-you h6{
+  font-size: 40px ;
+  font-weight: 600;
+}
+.thank-you p {
+  font-size: 23px;
+}
+.thank-you a {
+  padding: 7px 25px;
+  background-color: var(--secendory-color);
+  border: 1px solid var(--secendory-color);
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Satoshi-Variable";
+  font-weight: 600;
+}
+
 /* media query */
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -10816,14 +10842,16 @@ Keyframes Area Style
 }
 
 @media (max-width: 575.98px) {
-  .navbar {
+  .navbar,
+  .clean-footer .row > * {
     padding: 10px;
   }
-  .navbar .logo {
+  .navbar .logo,
+  .clean-footer .logo {
     width: 160px;
   }
   .above-hero-section {
-    padding: 10px;
+    padding: 40px 10px;
   }
   .above-hero-section .headline {
     font-size: 23px;
@@ -10834,8 +10862,55 @@ Keyframes Area Style
   .navbar .main-content {
     padding: 0;
   }
-  .section-padding{
+  .section-padding {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+  .sec-head h2 {
+    font-size: 23px;
+  }
+  .services .sec-head {
+    margin-bottom: 20px !important;
+  }
+  .who-we-are .sub-heading {
+    font-size: 23px;
+  }
+  .cta_banner.img-scale {
+    height: 300px;
+  }
+  .cta_banner.img-scale .headline.fz-70 {
+    font-size: 25px !important;
+  }
+  .clean-footer .logo {
+    margin-bottom: 0;
+  }
+  .blog-header .fz-55 {
+    font-size: 23px !important;
+  }
+  .blog-header .background {
+    margin-top: 20px !important;
+    height: 300px;
+    min-height: 300px;
+  }
+  .blog-detail-section .title h4 {
+    font-size: 23px;
+  }
+  .blog-detail-section .main-post .iner-img {
+    height: 300px;
+  }
+  .Intro .numb-font {
+    font-size: 40px !important;
+  }
+  .Intro.page-intro-cerv .cont {
+    padding: 20px;
+  }
+  .Intro.page-intro-cerv .img {
+    height: 300px;
+  }
+  .our_process {
+    padding: 20px;
+  }
+  .services-tab.our-story .serv-tab-cont .item .img {
+    display: none;
   }
 }

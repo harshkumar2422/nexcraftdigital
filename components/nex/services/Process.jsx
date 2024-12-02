@@ -3,7 +3,7 @@ import React from "react";
 
 function Process() {
   return (
-    <section className="process section-padding">
+    <section className="process section-padding our_process">
       <div className="container">
         <div className="sec-head mb-80">
           <h6 className="sub-title main-color mb-25">

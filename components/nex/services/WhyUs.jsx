@@ -6,7 +6,7 @@ function WhyUs() {
     <section className="services-tab section-padding  our-story">
       <div className="container">
         <div className="row lg-marg" id="tabs">
-          <div className="col-lg-4 valign">
+          <div className="col-lg-4 valign col-12 ">
             <div className="serv-tab-cont md-mb80">
               <div className="tab-content current" id="tabs-1">
                 <div className="item">

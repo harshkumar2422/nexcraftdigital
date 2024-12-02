@@ -8,42 +8,10 @@ function Intro() {
           <div className="row justify-content-start">
             <div className="col-lg-12">
               <div>
-                <h6 className="sub-title mb-15 main-color text-left fw-700">
-                  August 6, 2021
-                </h6>
-                <h4 className="mb-15  text-left ">
-                Information We Collect
-                </h4>
+                <h4 className="mb-15  text-left ">Information We Collect</h4>
 
                 <p className="text-left">
-                Personal Information: Contact and identification details (e.g., name, email). <br />
-                Usage Data: Information on site usage and browsing patterns. <br />
-                Cookies and Tracking Technologies: Data from cookies and similar tracking tools for analytics and customization.
-                </p>
-              </div>
-            </div>
-
-            <div className="col-lg-12 mt-15">
-              <div>
-                <h4 className="mb-15  text-left ">Services Overview</h4>
-
-                <p className="text-left">
-                  NexCraft Digital provides a range of IT services, including
-                  website development, software development, app development,
-                  SEO, digital marketing, and CRM solutions. Our goal is to
-                  deliver quality digital services tailored to meet your
-                  business needs. These Terms and Conditions govern your use of
-                  these services.
-                </p>
-              </div>
-            </div>
-
-            <div className="col-lg-12 mt-15">
-              <div>
-                <h4 className="mb-15  text-left">User Responsibilities</h4>
-
-                <p className="text-left">
-                  By using our services, you agree to:
+                  What personal data we collect and why we collect it
                 
                 </p>
               </div>
@@ -51,27 +19,50 @@ function Intro() {
 
             <div className="col-lg-12 mt-15">
               <div>
-                <h4 className="mb-15  text-left">
-                  Intellectual Property Rights
-                </h4>
+                <h4 className="mb-15  text-left ">Comments</h4>
 
                 <p className="text-left">
-                  All content, graphics, logos, and software on this website are
-                  the intellectual property of NexCraft Digital and are
-                  protected by copyright and trademark laws. You may not copy,
-                  modify, distribute, or use our materials without explicit
-                  permission.
+                When visitors leave comments on our site, we collect the data shown in the comments form, as well as the visitor’s IP address and browser user agent string to assist in spam detection.
+
                 </p>
               </div>
             </div>
 
             <div className="col-lg-12 mt-15">
               <div>
-                <h4 className="mb-15  text-left">Prohibited Activities</h4>
+                <h4 className="mb-15  text-left">Media</h4>
+
+                <p className="text-left">If you upload images to the website, please avoid uploading images that include embedded location data (EXIF GPS). Visitors to the website can download and extract any location data from images on the site.
+
+                </p>
+              </div>
+            </div>
+
+            <div className="col-lg-12 mt-15">
+              <div>
+                <h4 className="mb-15  text-left">Contact Forms
+
+                </h4>
 
                 <p className="text-left">
-                  You agree not to:
-               
+                When you fill out a contact form, we collect the information you provide, including your name, email address, and any additional information you submit. This data is used to respond to your inquiries and provide you with the requested services.
+
+                </p>
+              </div>
+            </div>
+
+            <div className="col-lg-12 mt-15">
+              <div>
+                <h4 className="mb-15  text-left">Cookies</h4>
+
+                <p className="text-left">If you leave a comment on our site, you may opt-in to save your name, email address, and website in cookies. These are for your convenience, so you don’t have to fill in your details again when leaving another comment. These cookies will last for one year.
+                   <br />
+                   If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.
+ <br />
+ When you log in, we will set up several cookies to save your login information and screen display choices. Login cookies last for two days, and screen options cookies last for one year. If you select “Remember Me,” your login will persist for two weeks. If you log out of your account, the login cookies will be removed.
+<br />
+If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and only indicates the post ID of the article you just edited. It expires after one day.
+
                 </p>
               </div>
             </div>
@@ -79,14 +70,13 @@ function Intro() {
             <div className="col-lg-12 mt-15">
               <div>
                 <h4 className="mb-15  text-left">
-                  Account Creation and Security
+                Embedded content from other websites
+
                 </h4>
 
                 <p className="text-left">
-                  If you create an account with us, you are responsible for
-                  maintaining the confidentiality of your login details. You
-                  agree to notify us immediately of any unauthorized access to
-                  your account.
+                Articles on this site may include embedded content (e.g., videos, images, articles, etc.). Embedded content from other websites behaves exactly the same as if the visitor has visited the other website. These external websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interactions with that embedded content, including tracking your interaction with the content if you have an account and are logged into that website.
+
                 </p>
               </div>
             </div>
@@ -106,74 +96,34 @@ function Intro() {
 
             <div className="col-lg-12 mt-15">
               <div>
-                <h4 className="mb-15  text-left">Termination of Service</h4>
+                <h4 className="mb-15  text-left">How we protect your data
+                </h4>
 
                 <p className="text-left">
-                  We reserve the right to terminate or suspend your access to
-                  our services if we determine a breach of these Terms and
-                  Conditions. You may also terminate your use of our services
-                  with written notice. Upon termination, any remaining balance
-                  due is payable immediately.
+                We implement reasonable security measures to protect your personal information from unauthorized access, alteration, or destruction. However, no data transmission over the internet can be guaranteed to be 100% secure. Therefore, while we strive to protect your personal information, we cannot guarantee its absolute security.
+
                 </p>
               </div>
             </div>
             <div className="col-lg-12 mt-15">
               <div>
-                <h4 className="mb-15  text-left">Limitation of Liability</h4>
+                <h4 className="mb-15  text-left">Changes to this Privacy Policy
+                </h4>
 
                 <p className="text-left">
-                  NexCraft Digital is not liable for any indirect, incidental,
-                  or consequential damages that arise from using our services.
-                  Our maximum liability to you for any claim related to our
-                  services is limited to the fees you have paid to us for that
-                  specific service.
+                We reserve the right to update this Privacy Policy at any time. Any changes will be reflected on this page with an updated revision date. By continuing to use our website and services, you accept the changes made to the policy.
+
                 </p>
               </div>
             </div>
-            <div className="col-lg-12 mt-15">
-              <div>
-                <h4 className="mb-15  text-left"> Disclaimer of Warranties</h4>
-
-                <p className="text-left">
-                  Our services are provided on an as-is and as-available
-                  basis. NexCraft Digital makes no warranties, expressed or
-                  implied, regarding the completeness, accuracy, reliability, or
-                  availability of our services.
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-12 mt-15">
-              <div>
-                <h4 className="mb-15  text-left">Privacy Policy</h4>
-
-                <p className="text-left">
-                  We value your privacy and handle your data in accordance with
-                  our Privacy Policy. Please review our Privacy Policy to
-                  understand how we collect, use, and protect your information.
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-12 mt-15">
-              <div>
-                <h4 className="mb-15  text-left">Changes to Terms</h4>
-
-                <p className="text-left">
-                  NexCraft Digital reserves the right to update these Terms and
-                  Conditions at any time. We encourage you to review this page
-                  periodically for updates. Your continued use of our services
-                  after changes are posted constitutes your acceptance of the
-                  new terms.
-                </p>
-              </div>
-            </div>
+          
+         
             <div className="col-lg-12 mt-15">
               <div>
                 <h4 className="mb-15  text-left"> Contact Information</h4>
 
                 <p className="text-left">
-                  If you have any questions or need further clarification
-                  regarding these Terms and Conditions, please contact us at:
-                  info@nexcraft.digital
+                If you have any questions about our privacy policy or the handling of your data, please contact us at info@nexcraftdigital.com.
                 </p>
               </div>
             </div>

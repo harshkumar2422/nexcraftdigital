@@ -4,7 +4,7 @@ import React from "react";
 
 function GetInTouch() {
   return (
-    <section className="img-scale mb-40">
+    <section className="img-scale mb-40 cta_banner">
       <div className="image" data-overlay-dark="4">
         <div className="img">
           <img
@@ -16,7 +16,7 @@ function GetInTouch() {
           />
         </div>
         <div className="text-u text-center ontop">
-          <h4 className="fz-70 fw-600">
+          <h4 className="fz-70 fw-600 headline">
             Take Your <span className="fw-300">Business Higher</span>
           </h4>
           <Link

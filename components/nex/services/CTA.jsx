@@ -4,7 +4,7 @@ import React from "react";
 
 function CTA() {
   return (
-    <section className="img-scale">
+    <section className="img-scale cta_banner">
       <div className="image" data-overlay-dark="4">
         <div className="img">
           <img
@@ -16,7 +16,7 @@ function CTA() {
           />
         </div>
         <div className="text-u text-center ontop">
-          <h4 className="fz-40 fw-600">Ready to Elevate Your Business?</h4>
+          <h4 className="fz-40 fw-600 headline">Ready to Elevate Your Business?</h4>
           <Link
             className="service-cta"
             href="/contact-us"

@@ -6,8 +6,8 @@ import Cursor from "@/components/nex/common/cusor";
 import ProgressScroll from "@/components/nex/common/ProgressScroll";
 import Lines from "@/components/nex/common/Lines";
 import Header from "@/components/nex/contact-us/Header";
-import Contact from '@/components/nex/contact-us/Contact'
-import Map from '@/components/nex/contact-us/Map'
+import Contact from "@/components/nex/contact-us/Contact";
+import Map from "@/components/nex/contact-us/Map";
 
 export const metadata = {
   title: "NexCraft Digital",

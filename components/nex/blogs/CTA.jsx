@@ -3,7 +3,7 @@ import React from "react";
 
 function CTA() {
   return (
-    <section className="img-scale">
+    <section className="img-scale cta_banner">
       <div className="image" data-overlay-dark="4">
         <div className="img">
           <img

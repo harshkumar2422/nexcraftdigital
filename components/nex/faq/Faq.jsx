@@ -1,7 +1,24 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
+import data from "@/l-data/faq.json";
 
 function Faq() {
+  useEffect(() => {
+    // Ensure only the first item is open on initial render
+    const accordionItems = document.querySelectorAll(".accordion-info");
+    accordionItems.forEach((element, index) => {
+      if (index === 0) {
+        element.style.maxHeight = "300px";
+        element.classList.add("active");
+        element.parentElement.classList.add("active");
+      } else {
+        element.style.maxHeight = "0";
+        element.classList.remove("active");
+        element.parentElement.classList.remove("active");
+      }
+    });
+  }, []);
+
   function openAccordion(event) {
     document.querySelectorAll(".accordion-info").forEach((element) => {
       element.classList.remove("active");
@@ -20,66 +37,21 @@ function Faq() {
             <div className="full-width">
               <div className="list-serv">
                 <div className="accordion bord">
-                  <div
-                    className="item active mb-15 wow fadeInUp"
-                    data-wow-delay=".1s"
-                  >
-                    <div onClick={openAccordion} className="title">
-                      <h6>What services does NexCraft Digital offer?</h6>
-                      <span className="ico ti-plus"></span>
+                  {data?.map((item, index) => (
+                    <div
+                      className="item active mb-15 wow fadeInUp"
+                      data-wow-delay=".1s"
+                      key={`faq${index}`}
+                    >
+                      <div onClick={openAccordion} className="title">
+                        <h6> {item?.question} </h6>
+                        <span className="ico ti-plus"></span>
+                      </div>
+                      <div className="accordion-info">
+                        <p className="">{item?.answer}</p>
+                      </div>
                     </div>
-                    <div className="accordion-info">
-                      <p className="">
-                        We offer a range of digital solutions, including website
-                        development, app development, SEO, digital marketing,
-                        and CRM services, all tailored to help your business
-                        succeed.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="item mb-15 wow fadeInUp" data-wow-delay=".3s">
-                    <div onClick={openAccordion} className="title">
-                      <h6>How does the consultation process work?</h6>
-                      <span className="ico ti-plus"></span>
-                    </div>
-                    <div className="accordion-info">
-                      <p className="">
-                        Our process starts with a detailed discussion to
-                        understand your goals and requirements. From there, we
-                        create a custom strategy aligned with your needs.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="item wow mb-15 fadeInUp" data-wow-delay=".5s">
-                    <div onClick={openAccordion} className="title">
-                      <h6>What is the typical project timeline?</h6>
-                      <span className="ico ti-plus"></span>
-                    </div>
-                    <div className="accordion-info">
-                      <p className="">
-                        Project timelines vary based on scope and complexity.
-                        After our initial consultation, we’ll provide an
-                        estimated timeline for your specific project.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="item wow fadeInUp" data-wow-delay=".7s">
-                    <div onClick={openAccordion} className="title">
-                      <h6>
-                        Do you offer ongoing support after project completion?
-                      </h6>
-                      <span className="ico ti-plus"></span>
-                    </div>
-                    <div className="accordion-info">
-                      <p className="">
-                        Yes, we offer various maintenance and support packages
-                        to keep your website or application running smoothly.{" "}
-                      </p>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>
