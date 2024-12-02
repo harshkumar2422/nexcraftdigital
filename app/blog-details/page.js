@@ -1,86 +1,69 @@
-import generateStylesheetObject from "@/common/generateStylesheetsObject";
-import Navbar from "@/components/nex/home-main/Navbar";
+import dynamic from "next/dynamic";
+import Head from "next/head";
 import Script from "next/script";
+import Navbar from "@/components/nex/home-main/Navbar";
 import Footer from "@/components/nex/home-main/Footer";
 import Cursor from "@/components/nex/common/cusor";
 import ProgressScroll from "@/components/nex/common/ProgressScroll";
 import Lines from "@/components/nex/common/Lines";
-import Slider from "@/components/nex/blog-details/Slider";
-import Blog from "@/components/nex/blog-details/Blog";
 
-export const metadata = {
-  title: "NexCraft Digital",
-  icons: {
-    icon: "/nex/assets/imgs/favicon.ico",
-    shortcut: "/nex/assets/imgs/favicon.ico",
-    other: generateStylesheetObject([
-      "/nex/assets/css/plugins.css",
-      "/nex/assets/css/satoshi.css",
-      "/nex/assets/css/style.css",
-      "https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap",
-    ]),
-  },
-};
+const Slider = dynamic(() => import("@/components/nex/blog-details/Slider"), {
+  ssr: false,
+});
+const Blog = dynamic(() => import("@/components/nex/blog-details/Blog"), {
+  ssr: false,
+});
 
 export default function Services() {
   return (
-    <body>
-      <Cursor />
-      <ProgressScroll />
-      <Lines />
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
-          <Navbar />
-          <main className="main-bg o-hidden">
-            <Slider />
-            <Blog />
-          </main>
-          <Footer />
+    <>
+      <Head>
+        <title>NexCraft Digital</title>
+        <link rel="icon" href="/nex/assets/imgs/favicon.ico" />
+        <link rel="stylesheet" href="/nex/assets/css/plugins.css" />
+        <link rel="stylesheet" href="/nex/assets/css/satoshi.css" />
+        <link rel="stylesheet" href="/nex/assets/css/style.css" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
+      <div>
+        <Cursor />
+        <ProgressScroll />
+        <Lines />
+        <div id="smooth-wrapper">
+          <div id="smooth-content">
+            <Navbar />
+            <main className="main-bg o-hidden">
+              <Slider />
+              <Blog />
+            </main>
+            <Footer />
+          </div>
         </div>
+        {/* Scripts */}
+        <Script src="/nex/assets/js/ScrollTrigger.min.js" strategy="lazyOnload" />
+        <Script
+          src="/nex/assets/js/ScrollSmoother.min.js"
+          strategy="lazyOnload"
+        />
+        <Script src="/nex/assets/js/plugins.js" strategy="lazyOnload" />
+        <Script src="/nex/assets/js/TweenMax.min.js" strategy="lazyOnload" />
+        <Script src="/nex/assets/js/charming.min.js" strategy="lazyOnload" />
+        <Script src="/nex/assets/js/countdown.js" strategy="lazyOnload" />
+        <Script src="/nex/assets/js/gsap.min.js" strategy="lazyOnload" />
+        <Script src="/nex/assets/js/splitting.min.js" strategy="lazyOnload" />
+        <Script
+          src="/nex/assets/js/isotope.pkgd.min.js"
+          strategy="lazyOnload"
+        />
+        <Script
+          src="/nex/assets/js/imgReveal/imagesloaded.pkgd.min.js"
+          strategy="lazyOnload"
+        />
+        <Script src="/nex/assets/js/scripts.js" strategy="lazyOnload" />
       </div>
-
-      <Script
-        src="/nex/assets/js/ScrollTrigger.min.js"
-        strategy="beforeInteractive"
-      />
-      <Script
-        src="/nex/assets/js/ScrollSmoother.min.js"
-        strategy="beforeInteractive"
-      />
-      <Script
-        strategy="beforeInteractive"
-        src="/nex/assets/js/plugins.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/nex/assets/js/TweenMax.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/nex/assets/js/charming.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/nex/assets/js/countdown.js"
-      ></Script>
-
-      <Script
-        strategy="beforeInteractive"
-        src="/nex/assets/js/gsap.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/nex/assets/js/splitting.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/nex/assets/js/isotope.pkgd.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/nex/assets/js/imgReveal/imagesloaded.pkgd.min.js"
-      ></Script>
-      <Script src="/nex/assets/js/scripts.js"></Script>
-    </body>
+    </>
   );
 }

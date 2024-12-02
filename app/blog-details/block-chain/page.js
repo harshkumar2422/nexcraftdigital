@@ -5,7 +5,7 @@ import Footer from "@/components/nex/home-main/Footer";
 import Cursor from "@/components/nex/common/cusor";
 import ProgressScroll from "@/components/nex/common/ProgressScroll";
 import Lines from "@/components/nex/common/Lines";
-  
+
 export const metadata = {
   title: "NexCraft Digital",
   icons: {
@@ -22,22 +22,25 @@ export const metadata = {
 
 export default function Services() {
   return (
-    <body>
+    <>
+      {/* Cursor and Scroll Progress */}
       <Cursor />
       <ProgressScroll />
       <Lines />
+
+      {/* Page Content */}
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <Navbar />
           <main className="main-bg o-hidden">
+            {/* Blog Header */}
             <div className="header blog-header section-padding pb-0">
               <div className="container">
                 <div className="row justify-content-center">
                   <div className="col-lg-10">
                     <div className="caption">
                       <h1 className="fz-55 mt-10">
-                        Blockchain: The Technology Revolutionizing the Digital
-                        World
+                        Blockchain: The Technology Revolutionizing the Digital World
                       </h1>
                     </div>
                   </div>
@@ -46,243 +49,96 @@ export default function Services() {
               <div
                 className="background bg-img mt-80"
                 style={{
-                  backgroundImage:
-                    "url(/nex/assets/imgs/blog/blockchain/4.jpg)",
+                  backgroundImage: "url(/nex/assets/imgs/blog/blockchain/4.jpg)",
                 }}
               ></div>
             </div>
+
+            {/* Blog Content */}
             <section className="blog section-padding blog-detail-section">
               <div className="container">
                 <div className="row xlg-marg">
                   <div className="col-lg-12">
                     <div className="main-post">
-                      <div className="item pb-60">
-                        <article>
-                          <div className="title mt-30">
-                            <h4>What is Blockchain?</h4>
+                      <article className="pb-60">
+                        <header className="title mt-30">
+                          <h4>What is Blockchain?</h4>
+                        </header>
+                        <p className="text mt-20">
+                          Blockchain is a distributed ledger technology (DLT)...
+                        </p>
+                      </article>
+
+                      {/* Quote Section */}
+                      <blockquote className="post-qoute mt-50 fz-20">
+                        Blockchain is more than just a technology; it’s a paradigm shift...
+                      </blockquote>
+
+                      {/* Images Section */}
+                      <div className="mb-50 mt-50 row">
+                        {["1.jpg", "2.jpg", "3.jpg"].map((img, index) => (
+                          <div className="col-sm-4 sm-mb30" key={index}>
+                            <img
+                              className="iner-img"
+                              src={`/nex/assets/imgs/blog/blockchain/${img}`}
+                              alt={`Blockchain ${index + 1}`}
+                            />
                           </div>
-                          <div className="text mt-20">
-                            <p>
-                              Blockchain is a distributed ledger technology
-                              (DLT) that allows data to be stored across a
-                              network of computers in a way that makes it nearly
-                              impossible to alter or hack. Each block in the
-                              blockchain contains a set of transactions, and
-                              once a block is added to the chain, it is securely
-                              linked to the previous block, creating an
-                              unchangeable record. The decentralization feature
-                              ensures that no single party controls the system,
-                              enhancing trust and transparency. Blockchain works
-                              on the principle of consensus—participants in the
-                              network agree on the state of the ledger, ensuring
-                              all transactions are accurate and verifiable.
-                            </p>
-                          </div>
-                        </article>
-
-                        <div className="post-qoute mt-50">
-                          <h6 className="fz-20">
-                            <span className="l-block">
-                              Blockchain is more than just a technology; it’s a
-                              paradigm shift that empowers individuals, enhances
-                              transparency, and reshapes industries by fostering
-                              trust and decentralization.
-                            </span>
-                          </h6>
-                        </div>
-
-                        <div className="mb-50 mt-50">
-                          <div className="row">
-                            <div className="col-sm-4">
-                              <div className="iner-img sm-mb30">
-                                <img
-                                  src="/nex/assets/imgs/blog/blockchain/1.jpg"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                            <div className="col-sm-4">
-                              <div className="iner-img sm-mb30">
-                                <img
-                                  src="/nex/assets/imgs/blog/blockchain/2.jpg"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                            <div className="col-sm-4">
-                              <div className="iner-img">
-                                <img
-                                  src="/nex/assets/imgs/blog/blockchain/3.jpg"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="unorder-list mb-30">
-                          <h6 className="mb-15">Key Features of Blockchain</h6>
-                          <ul className="rest">
-                            <li>
-                              {" "}
-                              <strong>Decentralization:</strong> Unlike
-                              traditional centralized systems, where a single
-                              entity controls the data, blockchain relies on a
-                              network of distributed nodes (computers). This
-                              eliminates the need for intermediaries and
-                              enhances security.
-                            </li>
-
-                            <li>
-                              {" "}
-                              <strong>Immutability:</strong>
-                              Once a block is added to the blockchain, it cannot
-                              be altered or deleted. This ensures the integrity
-                              of the data and makes blockchain an ideal choice
-                              for tracking sensitive information.
-                            </li>
-                            <li>
-                              {" "}
-                              <strong>Transparency:</strong> All transactions on
-                              the blockchain are visible to all participants in
-                              the network. This level of transparency helps
-                              build trust and accountability.
-                            </li>
-                            <li>
-                              {" "}
-                              <strong>Security:</strong>
-                              Blockchain uses cryptographic techniques to secure
-                              data, making it extremely difficult for malicious
-                              actors to tamper with the information stored on
-                              the blockchain.
-                            </li>
-                            <li>
-                              {" "}
-                              <strong>Smart Contracts:</strong>
-                              These are self-executing contracts with the terms
-                              of the agreement directly written into lines of
-                              code. Smart contracts enable automated and
-                              trustless transactions without needing a third
-                              party.
-                            </li>
-                          </ul>
-                        </div>
-
-                        <div className="unorder-list mb-30">
-                          <h6 className="mb-15">
-                            Benefits of Blockchain Technology
-                          </h6>
-                          <ul className="rest">
-                            <li>
-                              {" "}
-                              <strong>Enhanced Security:</strong>
-                              Blockchain's encryption and decentralized nature
-                              make it one of the most secure technologies
-                              available, reducing the risk of data breaches and
-                              fraud.
-                            </li>
-                            <li>
-                              {" "}
-                              <strong>Improved Transparency:</strong>
-                              Every participant in the blockchain network can
-                              access the transaction history, ensuring that
-                              there is no hidden manipulation of data.
-                            </li>
-                            <li>
-                              {" "}
-                              <strong>Faster Transactions:</strong>
-                              Blockchain allows for peer-to-peer transactions
-                              without the need for intermediaries, leading to
-                              faster and more efficient exchanges.
-                            </li>
-                            <li>
-                              {" "}
-                              <strong>Lower Costs:</strong>
-                              By removing intermediaries, blockchain reduces
-                              transaction fees and administrative costs, making
-                              it more cost-effective for businesses.
-                            </li>
-                            <li>
-                              {" "}
-                              <strong>Traceability:</strong>
-                              Blockchain enables better tracking of assets
-                              throughout their lifecycle, which is especially
-                              beneficial in supply chains, ensuring authenticity
-                              and reducing fraud.
-                            </li>
-                          </ul>
-                        </div>
-
-                        <div className="unorder-list mb-30">
-                          <h6 className="mb-15">
-                            Best Practices for Enhancing Cybersecurity
-                          </h6>
-                          <ul className="rest">
-                            <li>
-                              {" "}
-                              <strong> Regular Software Updates:</strong>
-                              Keeping your operating systems, applications, and
-                              software up to date ensures you have the latest
-                              security patches that prevent exploitation by
-                              hackers.
-                            </li>
-                            <li>
-                              {" "}
-                              <strong> Strong Password Policies:</strong>
-                              Use complex passwords and enable two-factor
-                              authentication (2FA) wherever possible. Avoid
-                              using the same password for multiple accounts.
-                            </li>
-                            <li>
-                              {" "}
-                              <strong>Employee Training:</strong>
-                              One of the weakest links in cybersecurity is human
-                              error. Regular training on recognizing phishing
-                              attempts and safe browsing habits is essential for
-                              reducing risks.
-                            </li>
-                            <li>
-                              {" "}
-                              <strong>Backups and Encryption:</strong>
-                              Regularly back up important data and ensure it's
-                              encrypted to prevent unauthorized access in case
-                              of a breach or ransomware attack.
-                            </li>
-
-                            <li>
-                              {" "}
-                              <strong>
-                                {" "}
-                                Firewalls and Antivirus Protection:{" "}
-                              </strong>
-                              Ensure that your systems are equipped with robust
-                              firewalls and antivirus software to block
-                              potential threats and mitigate damage.
-                            </li>
-                          </ul>
-                        </div>
-
-                        <div className="text">
-                          <h6 className="mb-15">The Future of Blockchain</h6>
-                          <p>
-                            Blockchain is still in its early stages, but its
-                            potential is vast. It is expected that in the coming
-                            years, blockchain will continue to transform various
-                            industries, driving greater decentralization,
-                            improving security, and enabling new business
-                            models. Emerging technologies like 5G, IoT (Internet
-                            of Things), and artificial intelligence (AI) are
-                            expected to integrate seamlessly with blockchain,
-                            creating new opportunities for innovation.
-                            <br />
-                            One exciting development is the rise of DeFi
-                            (Decentralized Finance), a blockchain-based
-                            alternative to traditional financial systems, where
-                            individuals can transact directly without relying on
-                            banks or other intermediaries.
-                          </p>
-                        </div>
+                        ))}
                       </div>
+
+                      {/* Features Section */}
+                      {[
+                        {
+                          title: "Key Features of Blockchain",
+                          items: [
+                            { label: "Decentralization", description: "Unlike traditional centralized systems..." },
+                            { label: "Immutability", description: "Once a block is added..." },
+                            { label: "Transparency", description: "All transactions on the blockchain..." },
+                            { label: "Security", description: "Blockchain uses cryptographic techniques..." },
+                            { label: "Smart Contracts", description: "Self-executing contracts..." },
+                          ],
+                        },
+                        {
+                          title: "Benefits of Blockchain Technology",
+                          items: [
+                            { label: "Enhanced Security", description: "Blockchain's encryption and decentralized nature..." },
+                            { label: "Improved Transparency", description: "Every participant in the blockchain network..." },
+                            { label: "Faster Transactions", description: "Blockchain allows for peer-to-peer transactions..." },
+                            { label: "Lower Costs", description: "By removing intermediaries, blockchain reduces..." },
+                            { label: "Traceability", description: "Blockchain enables better tracking of assets..." },
+                          ],
+                        },
+                        {
+                          title: "Best Practices for Enhancing Cybersecurity",
+                          items: [
+                            { label: "Regular Software Updates", description: "Keeping your operating systems, applications..." },
+                            { label: "Strong Password Policies", description: "Use complex passwords and enable two-factor..." },
+                            { label: "Employee Training", description: "One of the weakest links in cybersecurity..." },
+                            { label: "Backups and Encryption", description: "Regularly back up important data..." },
+                            { label: "Firewalls and Antivirus Protection", description: "Ensure that your systems are equipped..." },
+                          ],
+                        },
+                      ].map((section, idx) => (
+                        <div className="unorder-list mb-30" key={idx}>
+                          <h6 className="mb-15">{section.title}</h6>
+                          <ul className="rest">
+                            {section.items.map((item, i) => (
+                              <li key={i}>
+                                <strong>{item.label}:</strong> {item.description}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+
+                      {/* Conclusion */}
+                      <section className="text">
+                        <h6 className="mb-15">The Future of Blockchain</h6>
+                        <p>
+                          Blockchain is still in its early stages, but its potential is vast...
+                        </p>
+                      </section>
                     </div>
                   </div>
                 </div>
@@ -293,48 +149,26 @@ export default function Services() {
         </div>
       </div>
 
-      <Script
-        src="/nex/assets/js/ScrollTrigger.min.js"
-        strategy="beforeInteractive"
-      />
-      <Script
-        src="/nex/assets/js/ScrollSmoother.min.js"
-        strategy="beforeInteractive"
-      />
-      <Script
-        strategy="beforeInteractive"
-        src="/nex/assets/js/plugins.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/nex/assets/js/TweenMax.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/nex/assets/js/charming.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/nex/assets/js/countdown.js"
-      ></Script>
-
-      <Script
-        strategy="beforeInteractive"
-        src="/nex/assets/js/gsap.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/nex/assets/js/splitting.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/nex/assets/js/isotope.pkgd.min.js"
-      ></Script>
-      <Script
-        strategy="beforeInteractive"
-        src="/nex/assets/js/imgReveal/imagesloaded.pkgd.min.js"
-      ></Script>
-      <Script src="/nex/assets/js/scripts.js"></Script>
-    </body>
+      {/* Scripts */}
+      {[
+        "ScrollTrigger.min.js",
+        "ScrollSmoother.min.js",
+        "plugins.js",
+        "TweenMax.min.js",
+        "charming.min.js",
+        "countdown.js",
+        "gsap.min.js",
+        "splitting.min.js",
+        "isotope.pkgd.min.js",
+        "imgReveal/imagesloaded.pkgd.min.js",
+        "scripts.js",
+      ].map((script, index) => (
+        <Script
+          key={index}
+          src={`/nex/assets/js/${script}`}
+          strategy="beforeInteractive"
+        />
+      ))}
+    </>
   );
 }
